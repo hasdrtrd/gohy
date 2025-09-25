@@ -1,0 +1,39 @@
+{
+  "name": "telegram-stars-bot-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js Telegram bot demonstrating Stars payment integration",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "stars",
+    "payment",
+    "nodejs",
+    "telegraf"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.15.6",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/telegram-stars-bot-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/telegram-stars-bot-nodejs/issues"
+  },
+  "homepage": "https://github.com/yourusername/telegram-stars-bot-nodejs#readme"
+}
