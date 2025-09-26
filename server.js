@@ -19,7 +19,7 @@ const bot = new Bot(BOT_TOKEN);
 
 // Install plugins
 bot.use(hydrate());
-bot.use(parseMode("Markdown"));
+bot.api.config.use(parseMode("Markdown"));
 bot.use(session({ initial: () => ({}) }));
 //bot.use(conversations());
 
