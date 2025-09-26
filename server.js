@@ -938,7 +938,7 @@ bot.on('pre_checkout_query', async (ctx) => {
 });
 
 // Handle successful payment
-bot.on('successful_payment', async (ctx) => {
+bot.on('message:successful_payment', async (ctx) => {
     const payment = ctx.message.successful_payment;
     const userId = ctx.from.id;
     const username = ctx.from.username || 'Unknown';
