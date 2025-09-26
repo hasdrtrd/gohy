@@ -223,9 +223,9 @@ const safeModeMenu = new Menu("safe-mode-menu")
     });
 
 // Register menus
-bot.use(mainMenu);
-bot.use(supportMenu);
-bot.use(safeModeMenu);
+//bot.use(mainMenu);
+//bot.use(supportMenu);
+//bot.use(safeModeMenu);
 
 // Command handlers
 async function handleStartCommand(ctx) {
