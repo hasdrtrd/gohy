@@ -19,7 +19,8 @@ const bot = new Bot(BOT_TOKEN);
 
 // Install plugins
 bot.use(hydrate());
-bot.api.config.use(parseMode("Markdown"));
+bot.api.config.parse_mode = "Markdown"; // Set default parse mode for outgoing messages
+bot.use(parseMode("Markdown")); // Use parse-mode plugin as middleware
 bot.use(session({ initial: () => ({}) }));
 //bot.use(conversations());
 
