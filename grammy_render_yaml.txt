@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: telegram-chat-bot-grammy
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: BOT_USERNAME
+        sync: false
+      - key: CHANNEL_LINK
+        value: https://t.me/yourchannel
+      - key: GROUP_LINK
+        value: https://t.me/yourgroup
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /health
+    disk:
+      name: app-data
+      mountPath: /opt/render/project/data
+      sizeGB: 1
+    scaling:
+      minInstances: 1
+      maxInstances: 1
+    rootDir: .
+    # Enable auto-deploy on push
+    autoDeploy: true
+    # Set build timeout
+    buildTimeout: 10m
