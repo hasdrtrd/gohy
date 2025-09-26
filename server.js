@@ -21,7 +21,7 @@ const bot = new Bot(BOT_TOKEN);
 bot.use(hydrate());
 bot.use(parseMode("Markdown"));
 bot.use(session({ initial: () => ({}) }));
-bot.use(conversations());
+//bot.use(conversations());
 
 // Express server
 const app = express();
