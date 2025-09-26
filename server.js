@@ -1103,8 +1103,8 @@ app.get('/stats', (req, res) => {
 });
 
 // Webhook endpoint for Telegram (optional, for production deployment)
-app.post(`/webhook/${BOT_TOKEN}`, express.raw({ type: 'application/json' }), (req, res) => {
-    bot.handleUpdate(JSON.parse(req.body));
+app.post(`/webhook/${BOT_TOKEN}`, express.json(), (req, res) => {
+    bot.handleUpdate(req.body);
     res.sendStatus(200);
 });
 
