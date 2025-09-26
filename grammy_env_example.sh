@@ -1,10 +1,10 @@
 # Telegram Bot Configuration
 # Get your bot token from @BotFather
-BOT_TOKEN=your_bot_token_here
+BOT_TOKEN=8371238054:AAE8CRr8xWmG5by4srQlRQZiVvf6kR7OduU
 
 # Bot username (without @ symbol)
 # Used for sharing and deep linking
-BOT_USERNAME=YourBotUsername
+BOT_USERNAME=InstantTalkBot
 
 # Admin User IDs (comma separated)
 # Get your ID from @userinfobot
@@ -12,7 +12,7 @@ ADMIN_IDS=123456789,987654321
 
 # Channel and Group Links (optional)
 # Customize these for your community
-CHANNEL_LINK=https://t.me/yourchannel
+CHANNEL_LINK=https://t.me/goasts
 GROUP_LINK=https://t.me/yourgroup
 
 # Server Configuration
